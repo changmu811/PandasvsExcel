@@ -11,6 +11,6 @@ import os
 
 students = pd.read_excel('008/Students.xlsx', index_col='ID')
 # students = students.loc[students['Age'].apply(validate_age)].loc[students.Score.apply(level_b)]  # 两种语法
-students = students.loc[students['Age'].apply(lambda x: 18 <= x <= 30)].loc \
-    [students.Score.apply(lambda x: 60 <= x < 90)]
+students = students.loc[students['Age'].apply(
+    lambda x: 18 <= x <= 30)].loc[students.Score.apply(lambda x: 60 <= x < 90)]
 print(students)

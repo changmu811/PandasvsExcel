@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-students = pd.read_excel('C:/Temp/Students.xlsx')
+students = pd.read_excel('009/Students.xlsx')
 students.sort_values(by='Number', inplace=True, ascending=False)
 students.index = range(0, len(students))
 print(students)
