@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "python 3.73",
+            "type": "shell",
+            "command": "d:\\Python37-32\\python.exe",
+            //"terminal.integrated.shellArgs.windows": ["/k", "e:\\myenv\\Scripts\\activate.bat"], settings.json关闭
+            //上面只能使用d:\\python37-32\\python.exe
+            "args": [
+                "${file}"
+            ],
+            // "options": {
+            //     "env": {
+            //         "PYTHONIOENCODING": "UTF-8"
+            //     },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
