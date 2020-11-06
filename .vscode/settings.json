@@ -190,24 +190,24 @@
     //Microsoft Python Language Server version 0.3.20.0 这个版本必须禁止以下，否则提示要(Lib.os)
     //2019年9月29日晚，改变了顺序从里到外的目录结构，正常了。
     //下面打开ipython3.exe 也能正常只能提示函数。
-    // "python.autoComplete.extraPaths": [
-    //     "e:/myenv/Lib/site-packages",
-    //     "e:/myenv/Scripts",
-    //     "D:/Python37-32/Lib/site-packages",
-    //     "D:/Python37-32/Scripts"
-    //     //e:\myenv\lib\site-packages\win32
-    //     //"e:\\myenv\\Lib\\site-packages\\win32\\lib"
-    //     //e:\myenv\lib\site-packages\pythonwin
-    //     //"h:/myenv/Lib/site-packages/PyQt5",
-    //     //"D:\\PyCharm 2018.2.4\\helpers\\python-skeletons",
-    //     //"C:\\Users\\changmu\\.PyCharm2018.2\\system\\python_stubs\\1645902098"
-    // ],
-    // "python.autoComplete.typeshedPaths": [
-    //     //"E:/myenv/Lib/site-packages/jedi/third_party/typeshed/stdlib/",
-    //     //"E:/myenv/Lib/site-packages/jedi/third_party/"
-    //     //"E:/program/vscode/PythoncacheFolderPath/"
-    //     "C:/Users/changmu/.vscode/extensions/ms-python.python-2020.10.332292344/languageServer.0.5.59/Typeshed"
-    // ],
+    "python.autoComplete.extraPaths": [
+        "e:/myenv/Lib/site-packages",
+        "e:/myenv/Scripts",
+        "D:/Python37-32/Lib/site-packages",
+        "D:/Python37-32/Scripts"
+        //e:\myenv\lib\site-packages\win32
+        //"e:\\myenv\\Lib\\site-packages\\win32\\lib"
+        //e:\myenv\lib\site-packages\pythonwin
+        //"h:/myenv/Lib/site-packages/PyQt5",
+        //"D:\\PyCharm 2018.2.4\\helpers\\python-skeletons",
+        //"C:\\Users\\changmu\\.PyCharm2018.2\\system\\python_stubs\\1645902098"
+    ],
+    "python.autoComplete.typeshedPaths": [
+        //"E:/myenv/Lib/site-packages/jedi/third_party/typeshed/stdlib/",
+        //"E:/myenv/Lib/site-packages/jedi/third_party/"
+        //"E:/program/vscode/PythoncacheFolderPath/"
+        "C:/Users/changmu/.vscode/extensions/ms-python.python-2020.10.332292344/languageServer.0.5.59/Typeshed"
+    ],
     // "python.analysis.typeshedPaths": [  
     //     //自动生成默认的地方可以修改位置               
     //     //"C:/Users/changmu/AppData/Local/Microsoft/Python Language Server/stubs.v2/"
