@@ -177,8 +177,10 @@
     //"python.pythonPath": "E:\\myenv\\Scripts\\python.exe", plsv 0.5.51.0 开始不支持 1.46.1
     //"http.proxy": "http://proxy-cn.toshiba.co.jp:8080/",
     //"python.languageServer": "Microsoft",
-    "python.languageServer": "Pylance",
+    "python.languageServer": "Jedi",
     "python.analysis.cacheFolderPath": "e:/program/vscode/PythoncacheFolderPath",
+    "python.autoComplete.addBrackets": true,
+    "python.jediPath": "e:\\myenv\\Lib\\site-packages\\jedi",
     "terminal.integrated.shellArgs.windows": ["/k", "e:\\myenv\\Scripts\\activate.bat"],
     "python.venvPath": "e:/myenv",
     "python.venvFolders": [
@@ -191,24 +193,24 @@
     //Microsoft Python Language Server version 0.3.20.0 这个版本必须禁止以下，否则提示要(Lib.os)
     //2019年9月29日晚，改变了顺序从里到外的目录结构，正常了。
     //下面打开ipython3.exe 也能正常只能提示函数。
-    // "python.autoComplete.extraPaths": [
-    //     "e:/myenv/Lib/site-packages",
-    //     "e:/myenv/Scripts",
-    //     "D:/Python37-32/Lib/site-packages",
-    //     "D:/Python37-32/Scripts"
-    //     //e:\myenv\lib\site-packages\win32
-    //     //"e:\\myenv\\Lib\\site-packages\\win32\\lib"
-    //     //e:\myenv\lib\site-packages\pythonwin
-    //     //"h:/myenv/Lib/site-packages/PyQt5",
-    //     //"D:\\PyCharm 2018.2.4\\helpers\\python-skeletons",
-    //     //"C:\\Users\\changmu\\.PyCharm2018.2\\system\\python_stubs\\1645902098"
-    // ],
-    // "python.autoComplete.typeshedPaths": [
-    //     //"E:/myenv/Lib/site-packages/jedi/third_party/typeshed/stdlib/",
-    //     //"E:/myenv/Lib/site-packages/jedi/third_party/"
-    //     //"E:/program/vscode/PythoncacheFolderPath/"
-    //     "C:/Users/changmu/.vscode/extensions/ms-python.python-2020.10.332292344/languageServer.0.5.59/Typeshed"
-    // ],
+    "python.autoComplete.extraPaths": [
+        "e:/myenv/Lib/site-packages",
+        "e:/myenv/Scripts",
+        "D:/Python37-32/Lib/site-packages",
+        "D:/Python37-32/Scripts"
+        //e:\myenv\lib\site-packages\win32
+        //"e:\\myenv\\Lib\\site-packages\\win32\\lib"
+        //e:\myenv\lib\site-packages\pythonwin
+        //"h:/myenv/Lib/site-packages/PyQt5",
+        //"D:\\PyCharm 2018.2.4\\helpers\\python-skeletons",
+        //"C:\\Users\\changmu\\.PyCharm2018.2\\system\\python_stubs\\1645902098"
+    ],
+    "python.autoComplete.typeshedPaths": [
+        //"E:/myenv/Lib/site-packages/jedi/third_party/typeshed/stdlib/",
+        //"E:/myenv/Lib/site-packages/jedi/third_party/"
+        //"E:/program/vscode/PythoncacheFolderPath/"
+        "C:/Users/changmu/.vscode/extensions/ms-python.python-2020.10.332292344/languageServer.0.5.59/Typeshed"
+    ],
     // "python.analysis.typeshedPaths": [  
     //     //自动生成默认的地方可以修改位置               
     //     //"C:/Users/changmu/AppData/Local/Microsoft/Python Language Server/stubs.v2/"
@@ -271,8 +273,6 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.minimap.enabled": false,
     //"python.jediEnabled": false,
-    "python.autoComplete.addBrackets": true,
-    "python.jediPath": "e:\\myenv\\Lib\\site-packages\\jedi",
     "editor.tabCompletion": "on",
     "editor.suggest.localityBonus": true,
     "python.formatting.autopep8Path": 
@@ -286,26 +286,150 @@
     //     "/k",
     //     "h:\\vs2017run.bat"
     // ],
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": true
     //"python.analysis.memory.keepLibraryAst": true,
-    "python.analysis.typeCheckingMode": "basic",
-    "python.analysis.diagnosticSeverityOverrides": {
-        "reportUnboundVariable": "information",
-        "reportImplicitStringConcatenation": "warning"
-    },
-    "python.analysis.autoSearchPaths":true,
-    "python.analysis.extraPaths": [
-        "e:/myenv/Lib/site-packages",
-        "e:/myenv/Scripts",
-        "D:/Python37-32/Lib/site-packages",
-        "D:/Python37-32/Scripts"
-    ],
+    // "python.analysis.typeCheckingMode": "basic",
+    // "python.analysis.diagnosticSeverityOverrides": {
+    //     "reportUnboundVariable": "information",
+    //     "reportImplicitStringConcatenation": "warning"
+    // },
+    // "python.analysis.autoSearchPaths":true,
+    // "python.analysis.extraPaths": [
+    //     "e:/myenv/Lib/site-packages",
+    //     "e:/myenv/Scripts",
+    //     "D:/Python37-32/Lib/site-packages",
+    //     "D:/Python37-32/Scripts"
+    // ],
     //"python.analysis.stubPath": "E:/myenv/Lib/site-packages/jedi/third_party",
-    "python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.11.0/dist",
-    "python.analysis.completeFunctionParens": true,
-    "python.analysis.useLibraryCodeForTypes": true
+    //"python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.11.0/dist",
+    // "python.analysis.completeFunctionParens": true,
+    // "python.analysis.useLibraryCodeForTypes": true
     // "python.dataScience.allowLiveShare": false,
     // "powershell.integratedConsole.showOnStartup": true
 }
 
 
+
+
+
+
+
+
+// {
+//     "terminal.integrated.windowsEnableConpty": false,
+//     "workbench.activityBar.visible": true,
+//     "terminal.integrated.shell.windows":
+//     //"D:\\Git\\bin\\bash.exe",
+//     "C:\\WINDOWS\\System32\\cmd.exe",
+//     //"python.defaultInterpreterPath": "E:\\myenv\\Scripts\\python.exe",
+//     //"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+//     //"python.pythonPath": "C:\\Users\\changmu\\.platformio\\penv\\Scripts\\python.exe",
+//     //"python.pythonPath": "D:/Python37-32/python.exe",
+//     //"python.pythonPath": "E:\\myenv\\Scripts\\python.exe", plsv 0.5.51.0 开始不支持 1.46.1
+//     //"http.proxy": "http://proxy-cn.toshiba.co.jp:8080/",
+//     //"python.languageServer": "Pylance",
+//     "python.analysis.cacheFolderPath": "e:/program/vscode/PythoncacheFolderPath",
+//     "python.autoComplete.addBrackets": true,
+//     "terminal.integrated.shellArgs.windows": ["/k", "e:\\myenv\\Scripts\\activate.bat"],
+//     "python.venvPath": "e:/myenv",
+//     "python.venvFolders": [
+//         "envs",
+//         ".pyenv",
+//         ".direnv",
+//         "e:/myenv"
+//      ],
+//     "python.linting.enabled": true,
+//     //Microsoft Python Language Server version 0.3.20.0 这个版本必须禁止以下，否则提示要(Lib.os)
+//     //2019年9月29日晚，改变了顺序从里到外的目录结构，正常了。
+//     //下面打开ipython3.exe 也能正常只能提示函数。
+//     // "python.terminal.launchArgs": [
+//     //     "-m",
+//     //     "IPython"
+//     //  ],
+//     "python.terminal.launchArgs": [
+//         "-c",
+//         "\"from IPython import start_ipython; start_ipython()\""
+//     ],
+//     //"python.autoComplete.preloadModules": ["numpy", "pandas", "matplotlib"],
+//     "window.zoomLevel": 0,
+//     //"python.linting.enabledWithoutWorkspace": true,
+//     "editor.fontSize": 16,
+//     "git.ignoreMissingGitWarning": true,
+//     "editor.quickSuggestionsDelay": 10,
+//     "editor.quickSuggestions": {
+//         "other": true,
+//         "comments": false,
+//         "strings": false
+//     },
+//     "editor.wordBasedSuggestions": true,
+//     "editor.acceptSuggestionOnEnter": "on",
+//     "code-runner.executorMap": {
+//         //"code-runner.customCommand": "F:\\Microsoft Visual Studio 14.0\\VC\\vcvarsall.bat x86",
+//         "javascript": "node",
+//         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+//         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+//         "cpp": "cd $dir && g++ -m32 -fexceptions -g  -std=c++17 -static-libgcc -lpthread $fileName -lpsapi -lws2_32  -o  $fileNameWithoutExt && $dir$fileNameWithoutExt",
+//         //"cpp": "cd $dir && cl /EHa /MD $fileName",
+//         //"cpp": "cd $dir && \"D:\\Microsoft Visual Studio\\VC\\Auxiliary\\Build\\vcvarsall.bat \" x86 && cl /EHsc /MDd /Zi /Od /Gd $fileName",
+//         //"cpp": "cd $dir && clang++ -std=c++14  -Wextra -pedantic -pthread $fileName",
+//         //"cpp": "cd $dir && clang++ $fileName -o $fileNameWithoutExt -std=c++14 && $dir$fileNameWithoutExt",
+//         //"cpp": "cd $dir && clang++ $fileName -o $fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=x86_64-w64-mingw -std=c++17 && $dir$fileNameWithoutExt",
+//         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+//         "php": "php",
+//         "python": "set PYTHONIOENCODING=utf8 && python",
+//         "powershell": "powershell -ExecutionPolicy ByPass -File",
+//         "bat": "cmd /c",
+//         "shellscript": "bash",
+//         "vbscript": "cscript //Nologo",
+//         "typescript": "ts-node",
+//         "coffeescript": "coffee"
+//     },
+//     "code-runner.clearPreviousOutput": true,
+//     "code-runner.runInTerminal": true, 
+//     //"editor.snippetSuggestions": "inline",
+//     //"emmet.showSuggestionsAsSnippets": true,
+//     "files.autoSave": "afterDelay",
+//     "workbench.iconTheme": "material-icon-theme",
+//     "terminal.integrated.rendererType": "auto",
+//     "files.associations": {
+//         "str2int,py": "python",
+//         "*.cpp": "cpp",
+//         "*.py": "python"
+//     },
+//     "editor.suggest.snippetsPreventQuickSuggestions": false,
+//     "editor.minimap.enabled": false,
+//     //"python.jediEnabled": false,
+//     "editor.tabCompletion": "on",
+//     "editor.suggest.localityBonus": true,
+//     "python.formatting.autopep8Path": 
+//     "e:\\myenv\\Scripts\\autopep8",
+//     "editor.wordWrap": "on",
+//     "git.autofetch": true,
+//     "editor.multiCursorModifier": "alt",
+//     "workbench.colorTheme": "Monokai",
+//     // "terminal.integrated.shellArgs.windows": 
+//     // [
+//     //     "/k",
+//     //     "h:\\vs2017run.bat"
+//     // ],
+//     "diffEditor.ignoreTrimWhitespace": true
+//     //"python.analysis.memory.keepLibraryAst": true,
+//     // "python.analysis.typeCheckingMode": "basic",
+//     // "python.analysis.diagnosticSeverityOverrides": {
+//     //     "reportUnboundVariable": "information",
+//     //     "reportImplicitStringConcatenation": "warning"
+//     // },
+//     // "python.analysis.autoSearchPaths":true,
+//     // "python.analysis.extraPaths": [
+//     //     "e:/myenv/Lib/site-packages",
+//     //     "e:/myenv/Scripts",
+//     //     "D:/Python37-32/Lib/site-packages",
+//     //     "D:/Python37-32/Scripts"
+//     // ],
+//     //"python.analysis.stubPath": "E:/myenv/Lib/site-packages/jedi/third_party",
+//     //"python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.11.0/dist",
+//     // "python.analysis.completeFunctionParens": true,
+//     // "python.analysis.useLibraryCodeForTypes": true
+//     // "python.dataScience.allowLiveShare": false,
+//     // "powershell.integratedConsole.showOnStartup": true
+// }
