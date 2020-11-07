@@ -288,22 +288,6 @@
     // ],
     "diffEditor.ignoreTrimWhitespace": true
     //"python.analysis.memory.keepLibraryAst": true,
-    // "python.analysis.typeCheckingMode": "basic",
-    // "python.analysis.diagnosticSeverityOverrides": {
-    //     "reportUnboundVariable": "information",
-    //     "reportImplicitStringConcatenation": "warning"
-    // },
-    // "python.analysis.autoSearchPaths":true,
-    // "python.analysis.extraPaths": [
-    //     "e:/myenv/Lib/site-packages",
-    //     "e:/myenv/Scripts",
-    //     "D:/Python37-32/Lib/site-packages",
-    //     "D:/Python37-32/Scripts"
-    // ],
-    //"python.analysis.stubPath": "E:/myenv/Lib/site-packages/jedi/third_party",
-    //"python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.11.0/dist",
-    // "python.analysis.completeFunctionParens": true,
-    // "python.analysis.useLibraryCodeForTypes": true
     // "python.dataScience.allowLiveShare": false,
     // "powershell.integratedConsole.showOnStartup": true
 }
