@@ -176,6 +176,15 @@
     //"python.pythonPath": "D:/Python37-32/python.exe",
     //"python.pythonPath": "E:\\myenv\\Scripts\\python.exe", plsv 0.5.51.0 开始不支持 1.46.1
     //"http.proxy": "http://proxy-cn.toshiba.co.jp:8080/",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.minimap.enabled": false,
+    "editor.tabCompletion": "on",
+    "editor.suggest.localityBonus": true,
+    "python.formatting.autopep8Path": "e:\\myenv\\Scripts\\autopep8",
+    "editor.wordWrap": "on",
+    "git.autofetch": true,
+    "editor.multiCursorModifier": "alt",
+    "workbench.colorTheme": "Monokai",
     //"python.languageServer": "Microsoft",
     "python.languageServer": "Jedi",
     "python.analysis.cacheFolderPath": "e:/program/vscode/PythoncacheFolderPath",
@@ -270,17 +279,6 @@
         "*.cpp": "cpp",
         "*.py": "python"
     },
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.minimap.enabled": false,
-    //"python.jediEnabled": false,
-    "editor.tabCompletion": "on",
-    "editor.suggest.localityBonus": true,
-    "python.formatting.autopep8Path": 
-    "e:\\myenv\\Scripts\\autopep8",
-    "editor.wordWrap": "on",
-    "git.autofetch": true,
-    "editor.multiCursorModifier": "alt",
-    "workbench.colorTheme": "Monokai",
     // "terminal.integrated.shellArgs.windows": 
     // [
     //     "/k",
@@ -311,6 +309,15 @@
 //     //"python.pythonPath": "D:/Python37-32/python.exe",
 //     //"python.pythonPath": "E:\\myenv\\Scripts\\python.exe", plsv 0.5.51.0 开始不支持 1.46.1
 //     //"http.proxy": "http://proxy-cn.toshiba.co.jp:8080/",
+//     "editor.suggest.snippetsPreventQuickSuggestions": false,
+//     "editor.minimap.enabled": false,
+//     "editor.tabCompletion": "on",
+//     "editor.suggest.localityBonus": true,
+//     "python.formatting.autopep8Path": "e:\\myenv\\Scripts\\autopep8",
+//     "editor.wordWrap": "on",
+//     "git.autofetch": true,
+//     "editor.multiCursorModifier": "alt",
+//     "workbench.colorTheme": "Monokai",
 //     //"python.languageServer": "Pylance",
 //     "python.analysis.cacheFolderPath": "e:/program/vscode/PythoncacheFolderPath",
 //     "python.autoComplete.addBrackets": true,
@@ -380,17 +387,6 @@
 //         "*.cpp": "cpp",
 //         "*.py": "python"
 //     },
-//     "editor.suggest.snippetsPreventQuickSuggestions": false,
-//     "editor.minimap.enabled": false,
-//     //"python.jediEnabled": false,
-//     "editor.tabCompletion": "on",
-//     "editor.suggest.localityBonus": true,
-//     "python.formatting.autopep8Path": 
-//     "e:\\myenv\\Scripts\\autopep8",
-//     "editor.wordWrap": "on",
-//     "git.autofetch": true,
-//     "editor.multiCursorModifier": "alt",
-//     "workbench.colorTheme": "Monokai",
 //     // "terminal.integrated.shellArgs.windows": 
 //     // [
 //     //     "/k",
