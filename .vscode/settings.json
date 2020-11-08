@@ -196,6 +196,10 @@
         "envs",
         ".pyenv",
         ".direnv",
+        "e:/myenv/Lib/site-packages",
+        "e:/myenv/Scripts",
+        "D:/Python37-32/Lib/site-packages",
+        "D:/Python37-32/Scripts",
         "e:/myenv"
      ],
     "python.linting.enabled": true,
@@ -327,6 +331,10 @@
 //         "envs",
 //         ".pyenv",
 //         ".direnv",
+        //    "e:/myenv/Lib/site-packages",
+        //    "e:/myenv/Scripts",
+        //    "D:/Python37-32/Lib/site-packages",
+        //    "D:/Python37-32/Scripts",
 //         "e:/myenv"
 //      ],
 //     "python.linting.enabled": true,
