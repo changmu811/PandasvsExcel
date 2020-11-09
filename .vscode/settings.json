@@ -41,12 +41,12 @@
 //         //"E:/myenv/Lib/site-packages/jedi/third_party/typeshed/stdlib/",
 //         //"E:/myenv/Lib/site-packages/jedi/third_party/"
 //         //"E:/program/vscode/PythoncacheFolderPath/"
-//         "C:/Users/changmu/.vscode/extensions/ms-python.python-2020.10.332292344/languageServer.0.5.59/"
+//         "C:/Users/changmu/.vscode/extensions/ms-python.python-v2020.11.358366026/languageServer.0.5.59/"
 //     ],
 //     "python.analysis.typeshedPaths": [  
 //         //自动生成默认的地方可以修改位置               
 //         //"C:/Users/changmu/AppData/Local/Microsoft/Python Language Server/stubs.v2/"
-//         "C:/Users/changmu/.vscode/extensions/ms-python.python-2020.10.332292344/languageServer.0.5.59/"
+//         "C:/Users/changmu/.vscode/extensions/ms-python.python-v2020.11.358366026/languageServer.0.5.59/"
 //     ],
 //     // "python.terminal.launchArgs": [
 //     //     "-m",
@@ -151,7 +151,7 @@
 //     //     "D:/Python37-32/lib"
 //     // ],
 //     //"python.analysis.stubPath": "E:/myenv/Lib/site-packages/jedi/third_party",
-//     //"python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.11.0/dist",
+//     //"python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.11.1/dist",
 //     // "python.analysis.completeFunctionParens": true,
 //     // "python.analysis.useLibraryCodeForTypes": true
 //     // "python.dataScience.allowLiveShare": false,
@@ -223,12 +223,12 @@
         //"E:/myenv/Lib/site-packages/jedi/third_party/typeshed/stdlib/",
         //"E:/myenv/Lib/site-packages/jedi/third_party/"
         //"E:/program/vscode/PythoncacheFolderPath/"
-        "C:/Users/changmu/.vscode/extensions/ms-python.python-2020.10.332292344/languageServer.0.5.59/Typeshed"
+        "C:/Users/changmu/.vscode/extensions/ms-python.python-v2020.11.358366026/languageServer.0.5.59/Typeshed"
     ],
     // "python.analysis.typeshedPaths": [  
     //     //自动生成默认的地方可以修改位置               
     //     //"C:/Users/changmu/AppData/Local/Microsoft/Python Language Server/stubs.v2/"
-    //     "C:/Users/changmu/.vscode/extensions/ms-python.python-2020.10.332292344/languageServer.0.5.59/"
+    //     "C:/Users/changmu/.vscode/extensions/ms-python.python-v2020.11.358366026/languageServer.0.5.59/"
     // ],
     // "python.terminal.launchArgs": [
     //     "-m",
@@ -417,7 +417,7 @@
 //         "D:/Python37-32/Scripts"
 //     ],
 //     //"python.analysis.stubPath": "E:/myenv/Lib/site-packages/jedi/third_party",
-//     "python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.11.0/dist",
+//     "python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.11.1/dist",
 //     "python.analysis.completeFunctionParens": true,
 //     "python.analysis.useLibraryCodeForTypes": true
 //     //"python.dataScience.allowLiveShare": false,
