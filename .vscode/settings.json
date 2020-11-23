@@ -151,7 +151,7 @@
 //     //     "D:/Python37-32/lib"
 //     // ],
 //     //"python.analysis.stubPath": "E:/myenv/Lib/site-packages/jedi/third_party",
-//     //"python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.11.2/dist",
+//     //"python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.12.0/dist",
 //     // "python.analysis.completeFunctionParens": true,
 //     // "python.analysis.useLibraryCodeForTypes": true
 //     // "python.dataScience.allowLiveShare": false,
@@ -417,7 +417,7 @@
         "D:/Python37-32/Scripts"
     ],
     //"python.analysis.stubPath": "E:/myenv/Lib/site-packages/jedi/third_party",
-    "python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.11.2/dist",
+    "python.analysis.stubPath": "C:/Users/changmu/.vscode/extensions/ms-python.vscode-pylance-2020.12.0/dist",
     "python.analysis.completeFunctionParens": true,
     "python.analysis.useLibraryCodeForTypes": true
     //"python.dataScience.allowLiveShare": false,
