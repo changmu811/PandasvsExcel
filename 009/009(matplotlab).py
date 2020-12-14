@@ -13,3 +13,4 @@ plt.xlabel('Field')
 plt.ylabel('Number')
 plt.tight_layout()
 plt.show()
+

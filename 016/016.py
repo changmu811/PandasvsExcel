@@ -12,8 +12,8 @@ import pandas as pd
 # table.Score = table.Score.astype(int)
 # print(table)
 
-students = pd.read_excel('C:/Temp/Student_score.xlsx', sheet_name='Students', index_col='ID')
-scores = pd.read_excel('C:/Temp/Student_score.xlsx', sheet_name='Scores', index_col='ID')
+students = pd.read_excel('Student_score.xlsx', sheet_name='Students', index_col='ID')
+scores = pd.read_excel('Student_score.xlsx', sheet_name='Scores', index_col='ID')
 table = students.join(scores, how='left').fillna(0)
 table.Score = table.Score.astype(int)
 print(table)

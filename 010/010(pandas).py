@@ -13,3 +13,4 @@ ax = plt.gca()
 ax.set_xticklabels(students['Field'], rotation=40, ha='right')
 plt.gcf().subplots_adjust(left=0.2, bottom=0.42)
 plt.show()
+
