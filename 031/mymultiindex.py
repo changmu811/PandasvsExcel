@@ -116,7 +116,5 @@ async def tcp_echo_client(message):
 if __name__ == '__main__':
     loop = asyncio.ProactorEventLoop()
     asyncio.set_event_loop(loop)
-    loop.run_until_complete(tcp_echo_client('hee koo'))
-
-
-
+    loop.run_until_complete(t_echo_client('hee koo'))
+    
